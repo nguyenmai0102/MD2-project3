@@ -328,7 +328,7 @@ public class Book implements IBook,Serializable, Comparator<Book> {
             System.out.printf("%d.  %s\n",author.getAuthorId(),author.getAuthorName());
         }
     }
-    public ArrayList<Book> getData() {
+    public static ArrayList<Book> getData() {
         ArrayList<Book> bookList=new ArrayList<>();
         File file = null;
         FileInputStream fis = null;

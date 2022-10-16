@@ -12,15 +12,11 @@ public interface IBook {
 
     void displayData();
 
-    static void getData() {
+    static ArrayList<Author> getData() {
 
+        return null;
     }
 
-    ArrayList<Book> getData();
-
-    static void insertData() {
-
-    }
 
     void insertData();
 }

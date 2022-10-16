@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 import static ra.entity.Author.*;
 import static ra.entity.IBook.File_Author;
+import static ra.entity.IBook.getData;
 
 public class AuthorMethod {
     public static ArrayList<Author> authorList = new ArrayList<>();
@@ -68,7 +69,7 @@ public class AuthorMethod {
 
     }
     public static void updateStatusAuthor(Scanner sc){
-        authorList = getData();
+        getData();
         System.out.println("Nhập Id tác giả muốn cập nhập: ");
         int inputId = Integer.parseInt(sc.nextLine());
         for (Author author : authorList) {

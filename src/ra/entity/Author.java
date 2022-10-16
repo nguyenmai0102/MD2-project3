@@ -109,7 +109,7 @@ public class Author implements IBook, Serializable {
         }
     }
 
-    public ArrayList<Book> getData() {
+    public ArrayList<Author> getData() {
         ArrayList<Author> authorList = new ArrayList<>();
         File file = null;
         FileInputStream fis = null;
